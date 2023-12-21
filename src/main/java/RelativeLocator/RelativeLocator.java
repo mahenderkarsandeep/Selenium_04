@@ -30,5 +30,7 @@ public class RelativeLocator
 		WebElement element = driver.findElement(By.xpath("//a[text()='Get started']"));
 		WebElement password = driver.findElement(RelativeLocator.withTagName("input").toLeftOf(element));
 
+		WebElement password1 = driver.findElement(RelativeLocator.withTagName("input").toRightOf(element));
+
 }
 }
