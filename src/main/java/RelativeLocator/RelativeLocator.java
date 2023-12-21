@@ -31,6 +31,9 @@ public class RelativeLocator
 		WebElement password = driver.findElement(RelativeLocator.withTagName("input").toLeftOf(element));
 
 		WebElement password1 = driver.findElement(RelativeLocator.withTagName("input").toRightOf(element));
+		WebElement element = driver.findElement(RelativeLocator.withTagName("div").below(referenceElement));
+		WebElement element = driver.findElement(RelativeLocator.withTagName("div").above(referenceElement));
+		WebElement element = driver.findElement(RelativeLocator.withTagName("div").near(referenceElement));
 
 }
 }
